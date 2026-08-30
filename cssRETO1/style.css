@@ -1,0 +1,161 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("imgRETO1/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+
+/* BARRA DE NAVEGACIÓN */
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+.resaltado {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* TABLA DE PRODUCTOS */
+
+.productos {
+    width: 100%;
+}
+
+.productos table {
+    width: 100%;
+}
+
+.producto {
+    text-align: center;
+    padding: 15px;
+}
+
+.producto img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: red;
+}
+
+.producto p {
+    line-height: 1.5;
+}
+
+
+/* INFORMACIÓN DE CATEGORÍA Y ESTADO */
+
+.categoria {
+    font-weight: bold;
+    color: lightgray;
+}
+
+.estado {
+    font-weight: bold;
+    color: lightgreen;
+}
+
+
+/* TABLAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+th {
+    background-color: darkred;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid white;
+}
+
+tr:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
