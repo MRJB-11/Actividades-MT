@@ -1,0 +1,115 @@
+
+/* Configuracines generales de toda la página */
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: rgb(69, 155, 240);
+}
+
+
+/* Contenedor que contiene el formulario */
+.formulario {
+
+    /* Define el ancho del formulario */
+    width: 350px;
+
+    /* Centra el formulario horizontalmente */
+    margin: 50px auto;
+
+    /* Espacio interno del formulario */
+    padding: 25px;
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+}
+
+
+/* Título del formulario */
+.formulario h1 {
+
+    /* Centra el título */
+    text-align: center;
+
+}
+
+
+/* Etiquetas de los campos */
+.formulario label {
+
+    /* Hace que cada etiqueta ocupe una línea */
+    display: block;
+
+    /* Espacio superior */
+    margin-top: 15px;
+
+    /* Texto en negrita */
+    font-weight: bold;
+
+}
+
+
+/* Campos de entrada */
+.formulario input {
+
+    /* Hace que el campo ocupe todo el ancho disponible */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 10px;
+
+    /* Espacio superior */
+    margin-top: 5px;
+
+    /* Evita que el padding aumente el ancho del campo */
+    box-sizing: border-box;
+
+}
+
+
+/* Botón del formulario */
+.formulario button {
+
+    /* Hace que el botón ocupe todo el ancho */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 10px;
+
+    /* Espacio superior */
+    margin-top: 20px;
+
+    /* Cambia el tamaño del texto */
+    font-size: 16px;
+
+}
+
+
+/* Texto que aparece debajo del formulario */
+.formulario p {
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Espacio superior */
+    margin-top: 20px;
+
+}
+
+
+/* Enlaces */
+.formulario a {
+
+    /* Elimina el subrayado */
+    text-decoration: none;
+
+    /* Cambia el grosor del texto */
+    font-weight: bold;
+
+}
