@@ -2,43 +2,157 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Inicio de Sesión - Resident Evil &amp; Capcom</title>
 
 </head>
 
 <body>
 
-    <div class="formulario">
+    <header class="site-header">
 
-        <h1>Inicio de Sesión</h1>
+        <h1>Resident Evil &amp; Capcom</h1>
 
-        <form action="#" method="post">
+        <nav>
+            <ul>
+                <li><a href="../Reto1.html">Inicio</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="#login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
 
-            <label for="username">Nombre de usuario:</label>
+    </header>
 
-            <input type="text" id="username" name="username" placeholder="Escribe tu nombre de usuario" required>
 
-            <label for="password">Contraseña:</label>
+    <main>
 
-            <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+        <section id="login" class="login-section">
 
-            <button type="submit">Iniciar sesión</button>
+            <header class="section-header">
+                <h2>Inicio de Sesión</h2>
 
-        </form>
+                <p>
+                    Accede al sistema de contenido de
+                    Resident Evil &amp; Capcom.
+                </p>
+            </header>
+
+
+            <form action="#" method="post" class="login-form">
+
+                <div class="form-group">
+
+                    <label for="username">
+                        Nombre de usuario:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Escribe tu nombre de usuario"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Contraseña:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Escribe tu contraseña"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button type="submit">
+                        Iniciar sesión
+                    </button>
+
+                </div>
+
+            </form>
+
+
+            <section class="login-links">
+
+                <p>
+                    ¿No tienes una cuenta?
+                    <a href="registro.html">Registrarse</a>
+                </p>
+
+                <p>
+                    <a href="../Reto1.html">Volver al inicio</a>
+                </p>
+
+            </section>
+
+        </section>
+
+
+        <section class="access-information">
+
+            <h2>Información de acceso</h2>
+
+            <table>
+
+                <caption>
+                    Opciones disponibles
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Opción</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Usuario registrado</td>
+                        <td>Iniciar sesión</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nuevo usuario</td>
+                        <td>Registrarse</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
 
         <p>
-            ¿No tienes una cuenta?
-            <a href="registro.html">Registrarse</a>
+            Autor: Estudiante de Desarrollo de Software
         </p>
+
         <p>
-            <a href="../Reto1.html">Volver</a>
-        </p>        
-    </div>
+            &copy; 2026 Resident Evil &amp; Capcom.
+        </p>
+
+        <p>
+            Sistema de acceso &lt;RE-CMS&gt;
+        </p>
+
+    </footer>
 
 </body>
 
