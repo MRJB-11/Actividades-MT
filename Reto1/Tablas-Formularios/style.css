@@ -1,115 +1,200 @@
-
-/* Configuracines generales de toda la página */
-body {
-
-    margin: 0;
-
-    font-family: Arial, sans-serif;
-
-    background-color: rgb(69, 155, 240);
-}
-
-
-/* Contenedor que contiene el formulario */
-.formulario {
-
-    /* Define el ancho del formulario */
-    width: 350px;
-
-    /* Centra el formulario horizontalmente */
-    margin: 50px auto;
-
-    /* Espacio interno del formulario */
-    padding: 25px;
-
-    /* Fondo blanco */
-    background-color: white;
-
-    /* Bordes redondeados */
-    border-radius: 10px;
-
-}
-
-
-/* Título del formulario */
-.formulario h1 {
-
-    /* Centra el título */
-    text-align: center;
-
-}
-
-
-/* Etiquetas de los campos */
-.formulario label {
-
-    /* Hace que cada etiqueta ocupe una línea */
-    display: block;
-
-    /* Espacio superior */
-    margin-top: 15px;
-
-    /* Texto en negrita */
-    font-weight: bold;
-
-}
-
-
-/* Campos de entrada */
-.formulario input {
-
-    /* Hace que el campo ocupe todo el ancho disponible */
-    width: 100%;
-
-    /* Espacio interno */
-    padding: 10px;
-
-    /* Espacio superior */
-    margin-top: 5px;
-
-    /* Evita que el padding aumente el ancho del campo */
+* {
     box-sizing: border-box;
-
 }
 
-
-/* Botón del formulario */
-.formulario button {
-
-    /* Hace que el botón ocupe todo el ancho */
-    width: 100%;
-
-    /* Espacio interno */
-    padding: 10px;
-
-    /* Espacio superior */
-    margin-top: 20px;
-
-    /* Cambia el tamaño del texto */
-    font-size: 16px;
-
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgb(69, 155, 240);
+    background-image: url("../imgRETO1/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-/* Texto que aparece debajo del formulario */
-.formulario p {
-
-    /* Centra el texto */
+.site-header {
+    padding: 20px;
     text-align: center;
-
-    /* Espacio superior */
-    margin-top: 20px;
-
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
+.site-header h1 {
+    margin: 0 0 15px;
+}
 
-/* Enlaces */
-.formulario a {
+.site-header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    /* Elimina el subrayado */
+.site-header nav a {
+    color: white;
     text-decoration: none;
-
-    /* Cambia el grosor del texto */
     font-weight: bold;
+}
 
+.site-header nav a:hover {
+    color: #ff3333;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.login-section {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.80);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    margin-top: 0;
+    color: #ff3333;
+}
+
+.section-header p {
+    line-height: 1.5;
+}
+
+.login-form {
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-actions {
+    margin-top: 25px;
+}
+
+.form-actions button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #b30000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-actions button:hover {
+    background-color: #e60000;
+}
+
+.login-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-links a {
+    color: #ff4444;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.access-information {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-radius: 12px;
+}
+
+.access-information h2 {
+    text-align: center;
+    color: #ff3333;
+}
+
+.access-information table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.access-information caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.access-information th,
+.access-information td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.access-information th {
+    background-color: rgba(179, 0, 0, 0.8);
+}
+
+.site-footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+    .site-header nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .login-section {
+        padding: 20px;
+    }
+
+    .access-information {
+        padding: 15px;
+    }
 }

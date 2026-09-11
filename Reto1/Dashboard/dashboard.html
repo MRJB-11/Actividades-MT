@@ -3,25 +3,17 @@
 
 <head>
 
-    <!-- Permite utilizar caracteres especiales -->
     <meta charset="UTF-8">
-
-    <!-- Adapta la página a diferentes tamaños de pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>CAPCOM - Dashboard Relacional</title>
-
-        <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashboard.css">
 
 </head>
 
 <body align="center">
 
-    <!-- ENCABEZADO DE LA PÁGINA -->
     <header>
-
         <h1>Dashboard de Resident Evil</h1>
-
         <p>
             Información de videojuegos, remakes y solicitudes
             de la saga Resident Evil.
@@ -29,16 +21,10 @@
 
     </header>
 
-
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-
-        <!-- SECCIÓN 1: PRESENTACIÓN -->
         <section id="presentacion">
-
             <h2>Bienvenidos al catálogo de CAPCOM</h2>
-
             <p>
                 En esta página se presenta información sobre
                 algunos videojuegos destacados de la saga
@@ -47,31 +33,23 @@
 
         </section>
 
-
-        <!-- SECCIÓN 2: TABLA RELACIONAL -->
         <section id="catalogo">
 
             <h2>Catálogo de videojuegos</h2>
 
             <table border="1" align="center">
 
-                <!-- Define las columnas de la tabla -->
                 <colgroup>
-
                     <col>
                     <col>
                     <col>
                     <col>
-
                 </colgroup>
 
-
-                <!-- ENCABEZADO DE LA TABLA -->
                 <thead>
 
                     <tr>
 
-                        <!-- colspan une las cuatro columnas -->
                         <th colspan="4">
                             Catálogo de Resident Evil
                         </th>
@@ -89,14 +67,10 @@
 
                 </thead>
 
-
-                <!-- CUERPO DE LA TABLA -->
                 <tbody>
 
-                    <!-- ID que será relacionado con el formulario -->
                     <tr id="item-re2">
 
-                        <!-- rowspan une esta celda con la siguiente fila -->
                         <td rowspan="2">
                             Resident Evil
                         </td>
@@ -138,13 +112,10 @@
 
                 </tbody>
 
-
-                <!-- PIE DE LA TABLA -->
                 <tfoot>
 
                     <tr>
 
-                        <!-- Une las cuatro columnas -->
                         <td colspan="4">
 
                             Catálogo informativo de videojuegos
@@ -160,8 +131,6 @@
 
         </section>
 
-
-        <!-- SECCIÓN 3: INFORMACIÓN -->
         <section id="informacion">
 
             <h2>Información del catálogo</h2>
@@ -174,74 +143,42 @@
 
         </section>
 
-
     </main>
 
-
-    <!-- FORMULARIO DEPENDIENTE DE LA TABLA -->
     <aside>
 
         <h2>Solicitar información</h2>
 
         <form action="/pedido" method="post">
 
-            <!-- Este input se relaciona con la fila item-re2 -->
             <label for="req-re2">
                 Solicitar información de Resident Evil 2
                 (ID: item-re2):
             </label>
 
-            <input
-                type="number"
-                id="req-re2"
-                name="cantidad_re2"
-                tabindex="1"
-                required>
+            <input type="number" id="req-re2" name="cantidad_re2" tabindex="1" required>
 
-
-            <!-- Este input se relaciona con la fila item-re3 -->
             <label for="req-re3">
                 Solicitar información de Resident Evil 3
                 (ID: item-re3):
             </label>
 
-            <input
-                type="number"
-                id="req-re3"
-                name="cantidad_re3"
-                tabindex="2"
-                required>
+            <input type="number" id="req-re3" name="cantidad_re3" tabindex="2" required>
 
-
-            <!-- Este input se relaciona con la fila item-re4 -->
             <label for="req-re4">
                 Solicitar información de Resident Evil 4
                 (ID: item-re4):
             </label>
 
-            <input
-                type="number"
-                id="req-re4"
-                name="cantidad_re4"
-                tabindex="3"
-                required>
+            <input type="number" id="req-re4" name="cantidad_re4" tabindex="3" required>
 
-
-            <!-- Este input se relaciona con la fila item-code -->
             <label for="req-code">
                 Solicitar información de Resident Evil Code:
                 Veronica (ID: item-code):
             </label>
 
-            <input
-                type="number"
-                id="req-code"
-                name="cantidad_code"
-                tabindex="4"
-                required>
+            <input type="number" id="req-code" name="cantidad_code" tabindex="4" required>
 
-
-            <!-- Botón para enviar el formulario -->
             <button type="submit">
                 Enviar solicitud
             </button>
@@ -250,8 +187,6 @@
 
     </aside>
 
-
-    <!-- PIE DE PÁGINA -->
     <footer>
 
         <p>
