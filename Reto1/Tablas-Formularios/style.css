@@ -12,11 +12,11 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     background-color: rgb(69, 155, 240);
-    background-image: url("../imgRETO1/fondo.jpg");
+    background-image: url("../imgRETO1/fondo.avif");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .site-header {
