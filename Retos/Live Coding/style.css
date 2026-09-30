@@ -1,0 +1,15 @@
+/* El título se adapta al tamaño de la pantalla */
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Se usa una unidad relativa */
+p {
+    font-size: 1rem;
+}
+
+/* La imagen se adapta al ancho disponible */
+img {
+    max-width: 100%;
+    height: auto;
+}
