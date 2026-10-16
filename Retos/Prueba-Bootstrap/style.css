@@ -1,0 +1,57 @@
+
+/* Estilos propios de Catálogo Mandela */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Encabezado */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* NUEVO: personalización de los enlaces de navegación */
+.navbar .nav-link {
+    color: white;
+    padding: 8px 12px;
+}
+
+.navbar .nav-link:hover {
+    color: #bdbdbd;
+}
+
+/* NUEVO: personalización de las tarjetas de Bootstrap */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+/* NUEVO: transición al pasar el cursor */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+}
+
+/* NUEVO: ajuste adicional para celulares */
+@media (max-width: 575.98px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

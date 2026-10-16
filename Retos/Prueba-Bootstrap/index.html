@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Mandela</title>
+
+    <!-- NUEVO: conexión con la hoja CSS propia -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- NUEVO: Bootstrap mediante CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Catálogo Mandela</h1>
+        <p>Explora temas interesantes y descubre nuevos contenidos.</p>
+
+        <!-- NUEVO: navbar y utilidades de Bootstrap -->
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row flex-wrap justify-content-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="inicio" class="container py-4">
+        <section class="text-center mb-4">
+            <h2>Bienvenido</h2>
+            <p>
+                Aquí encontrarás información sobre Catálogo Mandela,
+                Lost Media y otros temas para explorar.
+            </p>
+        </section>
+
+        <!-- NUEVO: sistema de grillas de Bootstrap -->
+        <section id="catalogo">
+            <h2 class="text-center mb-4">Nuestro catálogo</h2>
+
+            <div class="row g-4">
+
+                <!-- NUEVO: columna responsiva y tarjeta -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Lost Media</h3>
+                            <p class="card-text">
+                                Descubre materiales audiovisuales,
+                                videojuegos y contenidos que son
+                                difíciles de encontrar.
+                            </p>
+                            <a href="#contacto" class="btn btn-primary">
+                                Ver más
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Curiosidades</h3>
+                            <p class="card-text">
+                                Explora historias, datos interesantes
+                                y descubrimientos de diferentes temas.
+                            </p>
+                            <a href="#contacto" class="btn btn-primary">
+                                Ver más
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Otros contenidos</h3>
+                            <p class="card-text">
+                                Encuentra nuevas categorías y temas
+                                que despierten tu curiosidad.
+                            </p>
+                            <a href="#contacto" class="btn btn-primary">
+                                Ver más
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="text-center my-5">
+            <h2>Contacto</h2>
+            <p>Gracias por visitar Catálogo Mandela.</p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Catálogo Mandela - 2026</p>
+    </footer>
+
+    <!-- NUEVO: JavaScript de Bootstrap para componentes interactivos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
