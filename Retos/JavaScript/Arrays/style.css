@@ -1,0 +1,20 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #315b43;
+}
+
+ul {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+li {
+    margin: 10px 0;
+}

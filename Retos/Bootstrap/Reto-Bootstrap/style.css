@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #e8edf5;
+    background-color: #080d18;
+}
+
+/* Identidad visual de la marca */
+.marca {
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #b8d8ff !important;
+}
+
+/* Presentación principal con tonos sobrenaturales */
+.hero-section {
+    background:
+        linear-gradient(
+            rgba(4, 9, 22, 0.78),
+            rgba(8, 18, 38, 0.96)
+        ),
+        url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-bottom: 1px solid #263d60;
+}
+
+.etiqueta {
+    color: #8abaff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero-section h1 {
+    text-shadow: 0 0 22px rgba(77, 151, 255, 0.45);
+}
+
+.texto-hero {
+    max-width: 700px;
+    color: #cbd5e5;
+}
+
+.btn-explorar {
+    background-color: #315f9c;
+    border: 1px solid #75a8ef;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+    background-color: #447fc4;
+    color: white;
+}
+
+.seccion-peliculas {
+    background-color: #0a1120;
+}
+
+.titulo-seccion {
+    color: #d9e9ff;
+    font-weight: bold;
+}
+
+.texto-secundario {
+    max-width: 650px;
+    color: #aab8cc;
+}
+
+.pelicula-card {
+    background-color: #101b2e;
+    color: #e8edf5;
+    border: 1px solid #293e5c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(47, 108, 190, 0.2);
+}
+
+.poster {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #18263c;
+}
+
+.pelicula-card .card-body {
+    padding: 20px;
+}
+
+.pelicula-card .card-title {
+    color: #d4e5ff;
+    font-size: 1.25rem;
+}
+
+.pelicula-card .card-text {
+    color: #b1bfd2;
+    line-height: 1.6;
+}
+
+.numero-pelicula {
+    color: #83b4f7;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.universo-section {
+    background-color: #0e192b;
+    border-top: 1px solid #263d60;
+}
+
+footer {
+    border-top: 1px solid #263d60;
+}
+
+.texto-footer {
+    color: #aab8cc;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .etiqueta {
+        letter-spacing: 2px;
+    }
+
+    .poster {
+        height: 400px;
+    }
+}
